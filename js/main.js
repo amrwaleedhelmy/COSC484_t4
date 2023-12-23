@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if a valid city is selected
         if (cityDropdown.value) {
             const selectedCoordinates = cityDropdown.value.split(",");
-            const apiUrl = `http://www.7timer.info/bin/api.pl?lon=${selectedCoordinates[1]}&lat=${selectedCoordinates[0]}&product=astro&output=xml`;
+            const apiUrl = `https://www.7timer.info/bin/api.pl?lon=${selectedCoordinates[1]}&lat=${selectedCoordinates[0]}&product=astro&output=xml`;
 
             fetch(apiUrl)
                 .then((response) => response.text())
